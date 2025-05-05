@@ -11,9 +11,11 @@ const persona = {
 function agregarHobbie(persona, nuevoHobbie) {
   persona.hobbies.push(nuevoHobbie);
 }
-
+do{
 const nuevoHobbie = prompt("Ingrese un nuevo hobbie:");
 agregarHobbie(persona, nuevoHobbie);
+}
+while(confirm("Desea agregar otro hobbie?"));
 
 document.writeln(`<h2>Hobbies de ${persona.nombre}:</h2>`);
 document.writeln("<ul>");
